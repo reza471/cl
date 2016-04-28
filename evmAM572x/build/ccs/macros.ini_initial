@@ -1,0 +1,11 @@
+PDK_INSTALL_PATH       = ../../../../../pdk_k2g_1_0_1/packages
+CSL_INSTALL_PATH       = ../../../../../pdk_k2g_1_0_1/packages
+BOARD_INSTALL_PATH     = ../../../../../pdk_k2g_1_0_1/packages
+SBL_BOOT_INSTALL_PATH  = ../../../../../pdk_k2g_1_0_1/packages
+FATFS_INSTALL_PATH     = ../../../../../pdk_k2g_1_0_1/packages
+OSAL_INSTALL_PATH      = ../../../../../pdk_k2g_1_0_1/packages
+GPIO_INSTALL_PATH      = ../../../../../pdk_k2g_1_0_1/packages
+I2C_INSTALL_PATH       = ../../../../../pdk_k2g_1_0_1/packages
+MMCSD_INSTALL_PATH     = ../../../../../pdk_k2g_1_0_1/packages
+UART_INSTALL_PATH      = ../../../../../pdk_k2g_1_0_1/packages
+USB_INSTALL_PATH       = ../../../../../pdk_k2g_1_0_1/packages

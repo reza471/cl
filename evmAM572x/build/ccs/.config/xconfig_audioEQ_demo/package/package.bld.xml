@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_audioEQ_demo" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/audioEQ_demo_pe66.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/ti/ProcSDK202_Alpha/processor_sdk_rtos_am57xx_2_00_02_04/demos/audio_equalization/evmAM572x/src/audioEQ_demo.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/audioEQ_demo_pe66.mak" src="package.bld"/>
+        <srcFile name="package/cfg/audioEQ_demo_pe66.oe66.dep" src="package/cfg/audioEQ_demo_pe66.c"/>
+        <srcFile name="package/cfg/audioEQ_demo_pe66.dep" src="package/cfg/audioEQ_demo_pe66.cfg"/>
+        <srcFile name="package/cfg/audioEQ_demo.xe66.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_audioEQ_demo.tar.dep" src="package/rel/xconfig_audioEQ_demo.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.elf.C66"
+            version="ti.targets.elf.C66{1,0,8.1,0"
+            rawVersion="8.1.0"
+            platform="ti.platforms.simTCI6616"
+            isa="66"
+            suffix="e66"
+            rootDir="C:/ti/ccsv6/tools/compiler/ti-cgt-c6000_8.1.0"
+            os="undefined"
+            rts="ti.targets.rts6000">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="audioEQ_demo"
+        pname="audioEQ_demo.pe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evmAM572X"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/audioEQ_demo_pe66.cfg"
+        xCfgPrefix="package/cfg/audioEQ_demo_pe66"
+        cfgScript="C:/ti/ProcSDK202_Alpha/processor_sdk_rtos_am57xx_2_00_02_04/demos/audio_equalization/evmAM572x/src/audioEQ_demo.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="audioEQ_demo"
+        pname="audioEQ_demo.xe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evmAM572X"
+        profile="release"
+        xCfgScript="package/cfg/audioEQ_demo_pe66.cfg"
+        xCfgPrefix="package/cfg/audioEQ_demo_pe66"
+        cfgScript="C:/ti/ProcSDK202_Alpha/processor_sdk_rtos_am57xx_2_00_02_04/demos/audio_equalization/evmAM572x/src/audioEQ_demo.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="audioEQ_demo.xe66"
+        args=""
+        groupName="audioEQ_demo.xe66"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_audioEQ_demo"
+        pname="xconfig_audioEQ_demo.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

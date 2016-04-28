@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--  This file conforms to the DTD xdc/bld/build.dtd -->
+<package name="xconfig_audiosample" version="" producerId="undefined">
+    <units>
+    </units>
+    <sources>
+        <srcFile name="package/cfg/audiosample_pe66.c"/>
+    </sources>
+    <configscripts>
+        <srcFile name="C:/ti/ProcSDK_K2G34/pdk_k2g_1_0_1/packages/ti/drv/mcasp/example/evmK2G/AIC31_Stereo_Loopback/c66/bios/audiosample.cfg"/>
+    </configscripts>
+    <makefiles>
+        <srcFile name="package.mak" src="package.bld"/>
+        <srcFile name="package/package.xdc.dep" src="package.xdc"/>
+        <srcFile name="package/cfg/audiosample_pe66.mak" src="package.bld"/>
+        <srcFile name="package/cfg/audiosample_pe66.oe66.dep" src="package/cfg/audiosample_pe66.c"/>
+        <srcFile name="package/cfg/audiosample_pe66.dep" src="package/cfg/audiosample_pe66.cfg"/>
+        <srcFile name="package/cfg/audiosample.xe66.mak" src="package.bld"/>
+        <srcFile name="package/rel/xconfig_audiosample.tar.dep" src="package/rel/xconfig_audiosample.xdc.inc"/>
+    </makefiles>
+    <targets>
+        <target name="ti.targets.elf.C66"
+            version="ti.targets.elf.C66{1,0,8.1,0"
+            rawVersion="8.1.0"
+            platform="ti.platforms.simTCI6616"
+            isa="66"
+            suffix="e66"
+            rootDir="C:/ti/ccsv6/tools/compiler/ti-cgt-c6000_8.1.0"
+            os="undefined"
+            rts="ti.targets.rts6000">
+            <model endian="little"
+                codeModel="undefined"
+                dataModel="undefined"/>
+        </target>
+    </targets>
+    <libraries>
+    </libraries>
+    <configurations>
+    <configuration name="audiosample"
+        pname="audiosample.pe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evmTCI66AK2G02"
+        profile="release"
+        isPartial="false"
+        xCfgScript="package/cfg/audiosample_pe66.cfg"
+        xCfgPrefix="package/cfg/audiosample_pe66"
+        cfgScript="C:/ti/ProcSDK_K2G34/pdk_k2g_1_0_1/packages/ti/drv/mcasp/example/evmK2G/AIC31_Stereo_Loopback/c66/bios/audiosample.cfg"
+        cfgArgs="null"
+        />
+    </configurations>
+    <executables>
+    <executable name="audiosample"
+        pname="audiosample.xe66"
+        target="ti.targets.elf.C66"
+        platform="ti.platforms.evmTCI66AK2G02"
+        profile="release"
+        xCfgScript="package/cfg/audiosample_pe66.cfg"
+        xCfgPrefix="package/cfg/audiosample_pe66"
+        cfgScript="C:/ti/ProcSDK_K2G34/pdk_k2g_1_0_1/packages/ti/drv/mcasp/example/evmK2G/AIC31_Stereo_Loopback/c66/bios/audiosample.cfg"
+        cfgArgs="null"
+        />
+    </executables>
+    <tests>
+    <test exeName="audiosample.xe66"
+        args=""
+        groupName="audiosample.xe66"
+        refOutput="undefined"
+        refExitCode="0"
+        execArgs=""
+        />
+    </tests>
+    <releases relDir="package/rel/">
+    <release name="xconfig_audiosample"
+        pname="xconfig_audiosample.tar"
+        label="default"
+    >
+        <file name="package/package.bld.xml"/>
+        <file name="package/build.cfg"/>
+        <file name="package/package.xdc.inc"/>
+    </release>
+    </releases>
+    <repositories>
+    </repositories>
+</package>

@@ -1,0 +1,12 @@
+package.xdc
+package.xs
+package/xconfig_audioEQ_demo.sch
+package/.vers_g180
+package/.vers_r170
+package/.vers_b160
+package/.xdc-B06
+package/xconfig_audioEQ_demo.java
+package/xconfig_audioEQ_demo.class
+package/package_xconfig_audioEQ_demo.c
+package/package.defs.h
+package/xconfig_audioEQ_demo.ccs
